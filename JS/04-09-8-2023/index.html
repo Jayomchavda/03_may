@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="formvalid">
+        <h2>Your Details</h2>
+        <br>
+        <hr>
+        <br>
+        <!-- Name -->
+        <form action="">
+            <div class="row">
+                <div class="col">Name :</div>
+                <div class="col">
+                    <input type="text" id="name" onblur="return blankcheck(this,'msg1')"
+                        onkeyup="return namecheck(this, 'msg1')" placeholder="Enter Your Name">
+                </div>
+                <div class="col">
+                    <span id="msg1" class="msg"></span>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <form action="">
+                <div class="row">
+                    <div class="col">Address :</div>
+                    <div class="col">
+                        <input type="text" id="addr" onblur="return blankcheck(this,'msg2')"
+                            placeholder="Enter Your Address">
+                    </div>
+                    <div class="col">
+                        <span id="msg2" class="msg"></span>
+                    </div>
+                </div>
+
+                <!-- zipcode -->
+                <form action="">
+                    <div class="row">
+                        <div class="col">Zip Code :</div>
+                        <div class="col">
+                            <input type="text" id="zcode" onblur="return blankcheck(this,'msg3')"
+                                placeholder="Enter Zip code">
+                        </div>
+                        <div class="col">
+                            <span id="msg3" class="msg"></span>
+                        </div>
+                    </div>
+
+                    <!-- Country -->
+                    <form action="">
+                        <div class="row">
+                            <div class="col">Country :</div>
+                            <div class="col">
+                                <select id="cntry">
+                                    <option value="-1">---Select---</option>
+                                    <option value="">India</option>
+                                    <option value="">US</option>
+                                    <option value="">Portugal</option>
+                                    <option value="">Australia</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <span id="msg4" class="msg"></span>
+                            </div>
+                        </div>
+
+                        <!-- button -->
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col">
+                                <button id="btn" onclick="return formcheck()">Click Here</button>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+
+
+                    </form>
+
+
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
