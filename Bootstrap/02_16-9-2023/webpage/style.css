@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 !important;
+}
+
+
+.topheader a {
+    transition: 0.5s ease all;
+
+}
+
+.topheader a:hover {
+    color: #ed6663 !important;
+
+}
+
+.topheader button {
+    border: 1px solid #ed6663;
+    color: #0f4c81;
+}
+
+.topheader button:hover {
+    border: 1px solid #0f4c81;
+    color: white;
+    background-color: #0f4c81;
+}
+
+.navigation {
+    background-color: #0f4c81;
+    position: sticky;
+    top: 0;
+
+
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 80px;
+}
+
+.mainpage {
+    background: url(images/img1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.mainpage .aboutroom {
+    background-color: white;
+}
+
+.mainpage .aboutroom .mapsign {
+    color: #ffa372;
+}
+
+.mainpage .aboutroom span {
+    color: #ffa372;
+
+}
+
+
+.mainpage .aboutroom .icon1 {
+    font-size: 27px;
+    color: #ed6663;
+}
+
+.mainpage .aboutroom button {
+    background-color: #0f4c81;
+    color: white;
+}
+
+.mainpage .aboutroom button:hover {
+    background-color: white;
+    color: #0f4c81;
+    transition: 1s ease all;
+}
+
+.searchproperty button {
+    background-color: #ed6663;
+    color: white;
+}
+
+.searchproperty button:hover {
+    background-color: #0f4c81;
+    transition: 0.5s ease all;
+}
+
+.wenderimages .backimg1 {
+    background: url(images/img3.jpg) no-repeat center;
+    background-size: cover;
+    height: 360px;
+}
+
+.wenderimages .backimg2 {
+    background: url(images/img4.jpg) no-repeat center;
+    background-size: cover;
+    height: 360px;
+}
+
+.wenderimages .img1-text {
+    background-color: #ed6663;
+    height: 360px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.wenderimages .img2-text {
+    height: 360px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.wenderimages .spn1 {
+    color: white;
+    font-size: 30px;
+
+}
+
+.wenderimages .spn2 {
+    color: #ed6663;
+    font-size: 30px;
+}
+
+.wenderimages a:hover {
+    color: #0f4c81 !important;
+    transition: 0.5s ease all;
+}
+
+.wenderimages .img5 {
+    background: url(images/img5.jpg) no-repeat center;
+    background-size: cover;
+    height: 450px;
+}
+
+.wenderimages .btn3 {
+    background-color: #ed6663;
+    color: white;
+}
+
+.wenderimages .btn3:hover {
+    background-color: #0f4c81;
+    transition: 0.5s ease all;
+}
+
+.wenderimages .img6 {
+    background: url(images/img6.jpg) no-repeat center;
+    background-size: cover;
+    height: 450px;
+}
+
+.wenderimages .building {
+    background-color: #ed6663;
+    height: 450px;
+}
+
+/* ============================================== */
+
+.placebox {
+    position: relative;
+}
+
+.placebox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    transition: 0.5s ease all;
+}
+
+.placebox:hover .text {
+    background-color: #4892d27f;
+}
+
+.placebox p {
+    transform: rotateX(90deg);
+    transition: 0.5s ease all;
+
+}
+
+.placebox :hover p {
+    transform: rotateX(0deg);
+}
+
+.review {
+    background: url(images/img13.jpg) no-repeat center;
+    background-size: cover;
+    height: 425px;
+}
+
+.review .view {
+    background-color: white;
+}
+
+.review img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #212121;
+}
+
+footer ul li {
+    color: #9b9fa2;
+
+}
+
+footer p {
+    color: #9b9fa2;
+}
+
+footer span {
+    text-decoration: none;
+}
+
+footer a {
+    color: #9b9fa2;
+}
+
+footer a:hover {
+    color: #ed6663;
+    transition: 0.5s ease all;
+}
+
+.copyrights {
+    background-color: black;
+    color: #9b9fa2;
+}
+
+.copyrights p b {
+    color: white;
+}
+
+/* ================================================================================ */
+@media (max-width:576px) {
+    .contact {
+        display: none;
+    }
+
+    .navigation ul {
+        gap: 10px;
+    }
+
+    .review .hide {
+        display: none;
+    }
+
+
+
+}
+
+
+
+
+
+@media (min-width:576px) {
+    .contact {
+        display: none;
+    }
+
+    .navigation ul {
+        gap: 10px;
+    }
+
+
+
+    .review .hide {
+        display: none;
+    }
+}
+
+
+@media (min-width:576px) {
+
+
+    .navigation ul {
+        gap: 10px;
+    }
+
+    .review .hide {
+        display: none;
+    }
+}
+
+@media (min-width:992px) {
+    .navigation ul {
+        gap: 80px;
+    }
+
+    .review .hide {
+        display: unset;
+    }
+}
